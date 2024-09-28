@@ -62,7 +62,6 @@
   height: 38px;
 }
 
-/* banner start */
 /* offer section */
 .offerMain {
   background: #f3f3f3;
@@ -84,17 +83,6 @@
   width: 100%;
 }
 
-/* offer section */
-/* restorent section */
-.restaurantsSection {
-  padding: 20px 0;
-}
-
-.restaurantsSection h5 {
-  margin-bottom: 20px;
-}
-
-/* restorent section */
 /* Restaurants near you */
 .restaurantsNearYouSection {
   padding: 4rem 0;
@@ -211,7 +199,6 @@
   margin-left: auto !important;
 }
 
-/* Restaurants near you */
 
 /* dining section */
 .diningSection {
@@ -307,5 +294,3 @@
     width: 100%;
   }
 }
-
-/* dining section */

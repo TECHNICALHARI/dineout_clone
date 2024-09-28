@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import styles from "../../assets/styles/home.module.css";
 import Container from '../common/Container';
+import { Link } from 'react-router-dom';
 
 const OffersSection = () => {
   const responsive = {
@@ -26,28 +27,28 @@ const OffersSection = () => {
   const offers = [
     {
       id: 0,
-      href: '/delhi-restaurants/more-than-30instant-discount',
+      href: '',
       imgSrc: 'https://im1.dineout.co.in/images/uploads/misc/2020/Nov/20/30offid.png?tr=tr:n-small',
       title: 'Best offers',
       alt: 'Best offers'
     },
     {
       id: 1,
-      href: '/delhi-restaurants/25instant-discount',
+      href: '',
       imgSrc: 'https://im1.dineout.co.in/images/uploads/misc/2020/Aug/12/25offid.png?tr=tr:n-small',
       title: 'Best offers',
       alt: 'Best offers'
     },
     {
       id: 2,
-      href: '/delhi-restaurants/20instant-discount',
+      href: '',
       imgSrc: 'https://im1.dineout.co.in/images/uploads/misc/2020/Aug/12/20offid.png?tr=tr:n-small',
       title: 'Best offers',
       alt: 'Best offers'
     },
     {
       id: 3,
-      href: '/delhi-restaurants/15instant-discount',
+      href: '',
       imgSrc: 'https://im1.dineout.co.in/images/uploads/misc/2020/Nov/20/15offid.png?tr=tr:n-small',
       title: 'Best offers',
       alt: 'Best offers'
@@ -64,7 +65,7 @@ const OffersSection = () => {
           <Carousel responsive={responsive}>
             {offers.map((offer) => (
                 <div key={offer.id} className={styles.offerItem}>
-                  <a href={offer.href}>
+                  <Link to={offer.href}>
                     <img
                       data-src={offer.imgSrc}
                       className={styles.lazyImg}
@@ -74,7 +75,7 @@ const OffersSection = () => {
                       height="180"
                       src={offer.imgSrc}
                     />
-                  </a>
+                  </Link>
               </div>
             ))}
           </Carousel>

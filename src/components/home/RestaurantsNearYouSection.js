@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import styles from "../../assets/styles/home.module.css";
 import Container from "../common/Container";
+import { Link } from "react-router-dom";
 
 const RestaurantsNearYouSection = () => {
   const responsive = {
@@ -91,19 +92,19 @@ const RestaurantsNearYouSection = () => {
         <div className={styles.restaurantsNearYouHeader}>
           <h2>Restaurants Near You</h2>
           <span className={styles.restaurantsNearYouSeeAll}>
-            <a
-              href="/delhi-restaurants/welcome-back"
+            <Link
+              to=""
               title="Restaurants Near You"
             >
               See all
-            </a>
+            </Link>
           </span>
         </div>
         <div className={styles.carouselList}>
           <Carousel responsive={responsive}>
             {restaurants.map((restaurant) => (
               <div key={restaurant.id} data-index={restaurant.id}>
-                <a href={restaurant.href}>
+                <Link to={restaurant.href}>
                   <div className={styles.restaurantItem}>
                     <div className={styles.restaurantImage}>
                       <img
@@ -130,7 +131,7 @@ const RestaurantsNearYouSection = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             ))}
           </Carousel>
