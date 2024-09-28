@@ -150,22 +150,22 @@ const Footer = () => {
           <div>
             <ul className={styles.socialIcons}>
               <li>
-                <a href="#">
+                <a href="/">
                   <YouTubeIcon />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <FaceBookIcon />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <InstagramIcon />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <TwitterIcon />
                 </a>
               </li>
