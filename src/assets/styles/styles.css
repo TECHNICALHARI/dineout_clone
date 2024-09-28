@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-primary);
+    text-align: left;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --bg-theme: #fff;
+    --bg-lightgray: #f8f8f8;
+    --bg-light: #eeeeee;
+    --text-primary: #333333;
+    --text-seconday: #666666;
+    --text-teritary: #999999;
+    --bg-lightpink: #fef2f1;
+    --text-dp: #5D1241;
+    --gray-bg: #EAE9E9;
+    --txtarea-bg: #FDFDFD;
+    --bg-body: #fff;
+    --bg-btnFiltersSelected: #fdf1f0;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit
+}
+
+h1 {
+    font-size: 2.8rem
+}
+
+h2 {
+    font-size: 2.408rem
+}
+
+h3 {
+    font-size: 2.1rem
+}
+
+h4 {
+    font-size: 1.61rem
+}
+
+h6 {
+    font-size: 1.4rem
+}
+strong {
+    font-weight: 700
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border-top: 1px solid #f3f3f3;
+    margin: 5rem 0;
+}
+h1,h4,h6 {
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+button {
+    border-radius: 0;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+button:focus {
+    outline: 0
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none
+}
+
+button,
+input {
+    overflow: visible
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.main {
+    min-height: calc(100vh - 76.8px);
+}
+
+.fillBtn {
+    padding: 0.8rem 4rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    box-shadow: 0 2px 5px 0 rgba(255, 88, 84, 0.3);
+    background: #FF645A;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: .4rem;
+}
