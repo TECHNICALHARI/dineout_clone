@@ -36,11 +36,11 @@ const Header = () => {
                     : ""
                 }
               >
-                <Link to="/delhi-restaurants">Book a Table</Link>
+                <Link to="/book-table">Book a Table</Link>
               </li>
               <li>
                 <Link
-                  to=""
+                  to="/blog"
                   rel="noopener noreferrer"
                 >
                   Blog
