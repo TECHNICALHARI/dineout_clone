@@ -40,8 +40,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="https://www.dineout.co.in/blog"
-                  target="_blank"
+                  to=""
                   rel="noopener noreferrer"
                 >
                   Blog
