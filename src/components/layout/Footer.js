@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white pt-10">
+    <footer className={styles.footer}>
       <Container>
         <h3 className={styles.sectionHeader}>Available in</h3>
         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4 mb-10">
@@ -133,7 +133,6 @@ const Footer = () => {
           <div>
             <img
               src="https://im1.dineout.co.in/images/uploads/misc/2023/Jun/19/swiggy_dineout_logo.png"
-              class="_3g_kE"
               alt="logo"
               width="125"
               height="30"

@@ -1,5 +1,4 @@
 import styles from "../../assets/styles/home.module.css";
-import { useState } from "react";
 import Container from "../common/Container";
 import { SearchIcon } from "../../utils/icons";
 const Banner = () => {
@@ -20,11 +19,9 @@ const Banner = () => {
               type="text"
               id="restaurantSearch"
               placeholder="Search for Restaurants, Cuisines, Location..."
-              value=""
-              autocomplete="off"
-              maxlength="50"
+              maxLength="50"
             />
-            <button class="fillBtn" type="submit" value="Submit">
+            <button className="fillBtn" type="submit">
               Search
             </button>
           </div>

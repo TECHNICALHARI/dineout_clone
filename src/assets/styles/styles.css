@@ -24,20 +24,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-    --bg-theme: #fff;
-    --bg-lightgray: #f8f8f8;
-    --bg-light: #eeeeee;
-    --text-primary: #333333;
-    --text-seconday: #666666;
-    --text-teritary: #999999;
-    --bg-lightpink: #fef2f1;
-    --text-dp: #5D1241;
-    --gray-bg: #EAE9E9;
-    --txtarea-bg: #FDFDFD;
-    --bg-body: #fff;
-    --bg-btnFiltersSelected: #fdf1f0;
-}
 h1,
 h2,
 h3,
@@ -112,8 +98,6 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     outline: none;
     border: none
 }
@@ -126,6 +110,13 @@ img{
     max-width: 100%;
     height: auto;
 }
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 90%;
+  }
 .main {
     min-height: calc(100vh - 76.8px);
 }

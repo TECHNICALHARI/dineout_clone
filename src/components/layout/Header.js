@@ -2,9 +2,11 @@ import React from "react";
 import styles from "../../assets/styles/layout.module.css";
 import { LocationIcon } from "../../utils/icons";
 import Container from "../common/Container";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+
   return (
     <header className={styles.header}>
       <Container>
@@ -24,10 +26,16 @@ const Header = () => {
           </div>
           <div className={styles.navLinks}>
             <ul>
-              <li>
-                <Link to="/delhi">Home</Link>
+              <li className={location.pathname === "/" ? styles.active : ""}>
+                <Link to="/">Home</Link>
               </li>
-              <li>
+              <li
+                className={
+                  location.pathname === "/delhi-restaurants"
+                    ? styles.active
+                    : ""
+                }
+              >
                 <Link to="/delhi-restaurants">Book a Table</Link>
               </li>
               <li>

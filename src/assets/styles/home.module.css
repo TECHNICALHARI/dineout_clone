@@ -290,4 +290,22 @@
   height: 32px;
 }
 
+@media (max-width: 992px) {
+  .diningList li {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .diningList li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .diningList li {
+    width: 100%;
+  }
+}
+
 /* dining section */
