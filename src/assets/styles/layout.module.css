@@ -62,11 +62,13 @@
   display: block;
 }
 
-.navLinks ul li a:hover, .navLinks .active a {
+.navLinks ul li a:hover {
+  color: #FF645A;
+}
+.navLinks .active a{
   color: #FF645A;
   font-weight: bold;
 }
-
 .navLinks ul li a:hover::before, .navLinks .active::before {
   content: '';
   position: absolute;
